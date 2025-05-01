@@ -1,0 +1,102 @@
+<resources>
+    <string name="main_title">Welcome to Blood Donor Search</string>
+    <string name="main_donor_account_sign_in">Donor Account Sign in</string>
+    <string name="main_donor_account_sign_up">Donor Account Sign Up</string>
+    <string name="main_search_for_donor">Search for Donor</string>
+    <string name="homepage_title">Home Page</string>
+    <string name="app_name">BloodDonorSearch</string>
+    <string name="welcome_screen_title">Blood Donor Login or Signup</string>
+    <string name="login_btn">Login</string>
+    <string name="signup_btn">Signup</string>
+    <string name="title_activity_login">Login Screen</string>
+    <string name="login_title_username">Username</string>
+    <string name="login_edittext_username_hint">Enter Username</string>
+    <string name="login_title_password">Password</string>
+    <string name="login_edittext_password_hint">Enter Password</string>
+    <string name="title_activity_signup">Donor Account Creation</string>
+    <string name="signup_title_username">Username</string>
+    <string name="signup_edittext_username_hint">Enter Username</string>
+    <string name="signup_title_city">City</string>
+    <string name="signup_edittext_city_hint">Enter City</string>
+    <string name="signup_title_state">State</string>
+    <string name="signup_edittext_state_hint">Enter State</string>
+    <string name="signup_title_country">Country</string>
+    <string name="signup_edittext_country_hint">Enter Country</string>
+    <string name="signup_title_email">Email</string>
+    <string name="signup_edittext_email_hint">Enter Email</string>
+    <string name="signup_title_password">Create Password</string>
+    <string name="signup_edittext_password_hint">Enter Password</string>
+    <string name="signup_title_password1">Re-enter Password</string>
+    <string name="signup_edittext_password_hint1">Enter Password Again</string>
+    <string name="signup_title_mobile_number">+ Country Code with Mobile Number</string>
+    <string name="signup_edittext_mobile_number_hint">Enter your Mobile Number with country code</string>
+    <string name="signup_title_blood_group">Blood Group</string>
+    <string name="home_title_filter_by_bloodgroup">Blood Group</string>
+    <string name="home_title_donor_name">Donor Name : </string>
+    <string name="home_title_blood_group">Blood Group : </string>
+    <string name="home_title_mobile_number">Mobile Number : </string>
+    <string name="home_title_address">Address : </string>
+    <string name="home_title_city">City</string>
+    <string name="home_title_state">State</string>
+    <string name="home_title_country">Country</string>
+    <string name="home_searchBy_address_hint">Search By Village/City/State/Country</string>
+    <string name="search_btn_for_address_hint">Search</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_history">Donation History</string>
+    <string name="menu_about">About</string>
+    <string name="menu_logout">Sign out</string>
+    <string name="menu_activate">Activate Account</string>
+    <string name="menu_deactivate">Deactivate Account</string>
+    <string name="menu_delete">Delete Account</string>
+    <string name="menu_settings">Edit Profile</string>
+    <string name="donor_profile_last_donation_date">Last Blood Donation Date </string>
+    <string name="donor_profile_old_phone_number">Old Phone Number</string>
+    <string name="donor_profile_new_phone_number">New Phone Number</string>
+    <string name="donor_profile_old_password">Enter Old Password</string>
+    <string name="donor_profile_new_password">Enter New Password</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Blood Donor Search</string>
+    <string name="nav_header_subtitle">blooddonorsearch@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_setting">Edit Profile</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="open">Open Drawer</string>
+    <string name="close">Close Drawer</string>
+
+    <string name="title_signup_page">Sign Up to Blood Donor Search</string>
+    <string name="title_signin_page">Sign In to Blood Donor Search</string>
+    <string name="title_or">OR</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_settings_mobile_number">Update Mobile Number</string>
+    <string name="title_activity_settings_password">Update Password</string>
+    <string name="title_activity_settings_mobile_number_hint">Enter Mobile Number with Country Code to update</string>
+    <string name="title_activity_settings_update">Update</string>
+    <string name="title_activity_settings_password_hint">Enter Password to update</string>
+    <string name="title_activity_settings_password1_hint">Enter Password again to update</string>
+    <string name="title_activity_settings_email">Update Email</string>
+    <string name="title_activity_settings_email_hint">Enter email address to update</string>
+    <string name="title_activity_settings_address">Update address</string>
+    <string name="title_activity_settings_city_hint">Enter City/Village to update</string>
+    <string name="title_activity_settings_state_hint">Enter State to update</string>
+    <string name="title_activity_settings_country_hint">Enter Country to update</string>
+    <string name="title_activity_settings_delete_account">Delete Account</string>
+    <string name="title_activity_settings_name_hint">Enter Name to update</string>
+    <string name="title_activity_settings_enable_account">Enable Account</string>
+    <string name="title_activity_settings_disable_account">Disable Account</string>
+    <string name="title_activity_settings_sign_out">Sign Out</string>
+    <string name="not_available">Not Available</string>
+
+    <string name="default_web_client_id">868626539426-jqlfdpeg8kr3g92lo8gg407mgb15upus.apps.googleusercontent.com</string>
+    <string name="title_activity_home_navigation">HomeNavigation</string>
+    <string name="fab_description">Compose Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BloodDonorSerch" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.BloodDonorSerch" parent="Base.Theme.BloodDonorSerch" />
+
+    <style name="Theme.BloodDonorSerch.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Theme.BloodDonorSerch.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.BloodDonorSerch.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
+
+    <!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+    <!--    &lt;!&ndash; Base application theme without Action Bar &ndash;&gt;-->
+    <!--    <style name="Theme.BloodDonorSerch" parent="Theme.Material3.DayNight.NoActionBar">-->
+    <!--        <item name="colorPrimary">@color/purple_500</item>-->
+    <!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+    <!--        <item name="colorOnPrimary">@color/white</item>-->
+    <!--        <item name="colorSecondary">@color/teal_200</item>-->
+    <!--        <item name="colorSecondaryVariant">@color/teal_700</item>-->
+    <!--        <item name="colorOnSecondary">@color/black</item>-->
+    <!--    </style>-->
+
+    <!--    &lt;!&ndash; Optional: AppBar & Popup Overlays &ndash;&gt;-->
+    <!--    <style name="Theme.BloodDonorSerch.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+    <!--    <style name="Theme.BloodDonorSerch.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+    <!--</resources>-->

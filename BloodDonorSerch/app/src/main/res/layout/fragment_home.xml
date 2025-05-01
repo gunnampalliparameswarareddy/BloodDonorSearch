@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        tools:context=".HomePage">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/home_title_blood_group_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_title_filter_by_bloodgroup"
+            android:textStyle="bold"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/home_blood_group_id_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48sp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/home_title_blood_group_id"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/search_by_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/home_searchBy_address_hint"
+            android:minHeight="48sp"
+            app:layout_constraintTop_toBottomOf="@id/home_blood_group_id_input"/>
+        <Button
+            android:id="@+id/search_by_address_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:textStyle="bold"
+            android:text="@string/search_btn_for_address_hint"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_by_address"/>
+
+
+        <!-- TextView for No Data Message -->
+        <TextView
+            android:id="@+id/noDataTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No donors available"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/search_by_address_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_by_address_btn"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

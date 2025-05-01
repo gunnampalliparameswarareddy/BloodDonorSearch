@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "868626539426",
+    "firebase_url": "https://searchforblood-542ef-default-rtdb.firebaseio.com",
+    "project_id": "searchforblood-542ef",
+    "storage_bucket": "searchforblood-542ef.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868626539426:android:fe4bb46f82deece6dcc8fb",
+        "android_client_info": {
+          "package_name": "com.main.blooddonorserch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868626539426-d8lju8996i4lm21daf4d0f7kjmsf86sc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.main.blooddonorserch",
+            "certificate_hash": "0befe104eb360b492a534cb0d7e191cbd010ef91"
+          }
+        },
+        {
+          "client_id": "868626539426-jqlfdpeg8kr3g92lo8gg407mgb15upus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHJz8nBvQpugMc4fNHvbxi06zAmGqzHd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868626539426-jqlfdpeg8kr3g92lo8gg407mgb15upus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

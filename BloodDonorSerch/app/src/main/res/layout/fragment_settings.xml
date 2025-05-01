@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Profile Picture Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/edit_profile"
+                android:contentDescription="Profile Picture"
+                android:scaleType="centerCrop"
+                />
+        </LinearLayout>
+
+        <!-- Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/user_1"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/update_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Full Name"
+                android:minHeight="48dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <!-- Blood Group -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_blood"
+                android:layout_marginEnd="8dp"/>
+
+            <Spinner
+                android:id="@+id/update_blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/gender"
+                android:layout_marginEnd="8dp"/>
+
+            <Spinner
+                android:id="@+id/update_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+        <!-- Date of Birth  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/dob"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/update_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Date of Birth"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <!-- Phone Number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/smartphone"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/update_mobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number with Country Code"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/donationtype"
+                android:layout_marginEnd="8dp"/>
+
+            <Spinner
+                android:id="@+id/update_blood_donation_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/last_blooddonationdate_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/update_last_dontation_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/calendar"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/update_last_blooddonationdate_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Last Blood Donation Date"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:clickable="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/recepient_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/update_recepient_name_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/recepient"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/update_recepient_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Recepient Name / Donation for Campaign(Mention Unknown)"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/recepient_donation_quantity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/update_donated_blood_quantity_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/blood_bag"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/update_donated_blood_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Donated Blood Quantity in Ml"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/recepient_location_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/update_recepient_location_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/hospital"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/update_recepient_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Recepient Hospital / Donation Campaign Name and Address"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+                />
+        </LinearLayout>
+        <!-- Address -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/city"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/update_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter City"
+                android:minHeight="48dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/state"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/update_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter State"
+                android:minHeight="48dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/country"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/update_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Country"
+                android:minHeight="48dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <!-- Save Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/save"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/save_profile"
+                android:text="Save Changes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="1dp"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/statusIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/activate"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/AccountStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activate"
+                android:backgroundTint="@color/green_1"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="1dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/delete"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/delete_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Account"
+                android:backgroundTint="@color/red_1"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="1dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
